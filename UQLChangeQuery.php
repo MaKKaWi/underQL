@@ -198,8 +198,8 @@ class UQLChangeQuery extends UQLBase {
 		return $update_query;
 	}
 	
-	public function update($extra = '') {
-		return $this->insertOrUpdate ( false, $extra );
+	public function the_uql_update($extra = '') {
+		return $this->the_uql_insert_or_update ( false, $extra );
 	}
 	
 	public function the_uql_update_where_id($id, $id_name = 'id') {
