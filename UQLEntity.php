@@ -77,11 +77,11 @@ class UQLEntity extends UQLBase {
 	}
 	
 	public function the_uql_update_from_array($the_array, $extra = '') {
-		return $this->insert_or_update_from_array ( $the_array, $extra, false );
+		return $this->the_uql_insert_or_update_from_array ( $the_array, $extra, false );
 	}
 	
 	public function the_uql_update_from_array_where_id($the_array, $id, $id_name = 'id') {
-		return $this->insert_or_update_from_array ( $the_array, "WHERE `$id_name` = $id", false );
+		return $this->the_uql_insert_or_update_from_array ( $the_array, "WHERE `$id_name` = $id", false );
 	}
 	
 	public function the_uql_update($extra = '') {
