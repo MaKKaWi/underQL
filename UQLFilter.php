@@ -35,6 +35,7 @@ class UQLFilter extends UQLBase {
 	private $uql_filters_map;
 	
 	public function __construct($entity_name) {
+		//wefwewewe
 		$this->uql_entity_name = $entity_name;
 		$this->uql_filters_map = new UQLMap ();
 	}
